@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Technical Documentation</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>Technical Documentation</header>
+    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+    <a class="nav-link" href="#CSS_Styling">CSS Styling</a>
+    <a class="nav-link" href="#Media_Queries">Media Queries</a>
+    <a class="nav-link" href="#Flexbox_Layout">Flexbox Layout</a>
+    <a class="nav-link" href="#API_Integration_with_JavaScript">API Integration with JavaScript</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="HTML_Basics">
+      <header>HTML Basics</header>
+      <p>HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages. HTML describes the structure of a web page using markup.</p>
+      <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms can be embedded into the rendered page.</p>
+      <p>HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other items.</p>
+      <code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First HTML Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="CSS_Styling">
+      <header>CSS Styling</header>
+      <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in HTML.</p>
+      <p>CSS describes how elements should be rendered on the screen, on paper, in speech, or on other media. It can control the layout of multiple web pages all at once.</p>
+      <p>CSS is easy to learn and understand, but it provides powerful control over the presentation of an HTML document. Most commonly, CSS is combined with the markup languages HTML or XHTML.</p>
+      <code>body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}</code>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Media_Queries">
+      <header>Media Queries</header>
+      <p>Media Queries in CSS allow you to apply different styles for different devices or screen sizes. They are used to make your web pages responsive and adaptable to various viewports.</p>
+      <p>Media queries can check for the width, height, aspect ratio, and resolution of a device, among other features. By using media queries, you can create a layout that looks good on all devices, from desktops to smartphones.</p>
+      <code>@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}</code>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Flexbox_Layout">
+        <header>Flexbox Layout</header>
+        <p>Flexbox, or the Flexible Box Layout, is a one-dimensional layout method for laying out items in rows or columns. It provides an efficient way to distribute space and align items within a container.</p>
+        <p>In this section, we'll explore the fundamentals of Flexbox, including container properties, item properties, and common use cases. Let's take a look at a simple Flexbox example:</p>
+        <code>.container {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .item {
+        flex: 1;
+      }</code>
+        <ul>
+          <li>Understand the basic principles of Flexbox.</li>
+          <li>Learn how to create flexible and responsive layouts.</li>
+        </ul>
+      </section>
+      
+      <section class="main-section" id="API_Integration_with_JavaScript">
+        <header>API Integration with JavaScript</header>
+        <p>APIs (Application Programming Interfaces) play a crucial role in modern web development. They allow applications to communicate with external services, retrieve data, and update content dynamically.</p>
+        <p>In this section, we'll focus on integrating APIs using JavaScript. We'll cover topics such as making HTTP requests, handling responses, and displaying data on a webpage. Here's a basic example using the Fetch API:</p>
+        <code>fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => console.log(data));</code>
+        <ul>
+          <li>Explore the basics of API integration.</li>
+          <li>Learn how to use the Fetch API for making asynchronous requests.</li>
+        </ul>
+      </section>
+      
+  </main>
+</body>
+</html>
